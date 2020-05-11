@@ -1,14 +1,11 @@
-
-<!-- Создание формы KommentForm, правила валидации и функция отправки данных на почту администратора -->
-
 <?php
 namespace app\models;
 use yii\base\Model;
 use Yii;
 use yii\captcha\Captcha;
 
+// Создание формы KommentForm, правила валидации и функция отправки данных на почту администратора 
 
-//создание формы, основанной на модели
 
 class KommentForm extends Model{
 

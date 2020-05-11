@@ -1,12 +1,11 @@
-
-<!-- Контроллер для формы оставления комментария с отправкой комментария на почту администратора и валидацией формы -->
-
 <?php
 namespace app\controllers;
 use Yii;
 use yii\web\Controller;
 use app\models\KommentForm;
 use yii\web\Request;
+
+// Контроллер для формы оставления комментария с отправкой комментария на почту администратора и валидацией формы 
 
 class MainController extends Controller{
 

@@ -1,11 +1,8 @@
-
-<!-- Создание формы NoteForm, которая вносит данные в БД -->
-
 <?php
 namespace app\models;
 use yii\db\ActiveRecord;
 
-
+// Создание формы NoteForm, которая вносит данные в БД
 class NoteForm extends ActiveRecord{
 
 	public static function tableName() {

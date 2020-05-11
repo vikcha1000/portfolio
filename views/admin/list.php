@@ -50,7 +50,7 @@ use app\assets\AppAsset;
 
 	<!-- Вывод всех записей в цикле -->
 
-<p><?php echo $cat->id; ?></p>
+
 <p><?php echo $cat->title; ?></p>
 <p><?php echo $cat->data; ?></p>
 <p><?php echo $cat->description; ?></p>
