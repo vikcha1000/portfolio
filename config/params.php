@@ -3,7 +3,7 @@
 /*Адреса для отправки почты */
 
 return [
-    'adminEmail' => 'vikcha1000@mail.ru',
-    'senderEmail' => 'zhust94@mail.ru',
+    'adminEmail' => 'mail@mail.ru',
+    'senderEmail' => 'mail_1@mail.ru',
     'senderName' => 'MyNewsPortal',
 ];
