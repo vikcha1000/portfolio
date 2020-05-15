@@ -16,15 +16,15 @@ use yii\widgets\ActiveForm;
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?= $this->title ?></title>
 	<?php $this->head() ?>
-<br>
-<h3>Отредактируйте вашу запись!</h3>
+
 
 
 </head>
 
 <body>
 	
-	
+<br>
+<h3>Отредактируйте вашу запись!</h3>
 
 <h4>Редактировать запись</h4>
 
