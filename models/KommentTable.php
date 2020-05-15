@@ -13,8 +13,8 @@ class KommentTable extends ActiveRecord{
      return 'komment_table';
  }
  
- public function getNotes(){
+/* public function getNotes(){
     return $this -> hasOne (NotesTable::className(), ['id' => 'parent'] );
- }
+ }*/
 
 }
