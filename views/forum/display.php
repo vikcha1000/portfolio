@@ -20,7 +20,7 @@ use yii\helpers\Html;
     <h3>Оставляйте комментарии под новостями!</h3>
 
 
-    <?php
+    <?php                           //вывод данных из БД
     foreach ($notes as $note) {
         echo '<ul>';
         echo '<li>' . '<b>' . $note->title . '</b>' . '<br>';
@@ -34,7 +34,7 @@ use yii\helpers\Html;
             echo '"' . $komment->text . '"' . '</li>';
             echo '</ul>' . '<br>';
         } ?>
-        <li role="presentation"><?= Html::a('Добавьте свой комментарий', ['/main/index']) ?></a></li><br><br>
+        <li role="presentation"><?= Html::a('Добавьте свой комментарий', ['/forum/index', 'parent' => $note->id]) ?></a></li><br><br>
 
     <?php
 

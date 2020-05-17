@@ -8,10 +8,7 @@ use yii\db\ActiveRecord;
 
 class NotesTable extends ActiveRecord{
 
-    public static function tableName()
-    {
-        return 'notes_table';
-    }
+   
  public function getKomment(){
     return $this -> hasMany (KommentTable::className(), ['parent' => 'id'] );
  }

@@ -50,7 +50,7 @@ class AdminController extends Controller{
 
 		$cats = NotesTable::find()->limit(10)->orderby(['id' => SORT_DESC])->all();		//создаем массив всех записей таблицы БД с сортировкой
 
-		return $this-> render ('list', compact('cats'), ['notes' => $note] );			//Передаем данные из контроллера
+		return $this-> render ('list', compact('cats'), compact('notes') );			//Передаем данные из контроллера
 
 
 	}

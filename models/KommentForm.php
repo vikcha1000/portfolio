@@ -3,18 +3,23 @@ namespace app\models;
 use yii\base\Model;
 use Yii;
 use yii\captcha\Captcha;
+use yii\db\ActiveRecord;
 
 // Создание формы KommentForm, правила валидации и функция отправки данных на почту администратора 
 
 
-class KommentForm extends Model{
+class KommentForm extends ActiveRecord{
 
-	public $name;
-	public $email;
-	public $phone;
-	public $text;
-	public $verifyCode;
-    
+
+   public $verifyCode;
+
+
+    public static function tableName()
+    {
+        return 'komment_table';
+    }
+
+ 
    
  /* функция валидации полей формы */
 	public function rules(){
@@ -25,7 +30,7 @@ class KommentForm extends Model{
 			['name', 'string', 'max' => 10, 'tooLong' => 'Имя слишком длинное, максимум 10 символов!'],
 			['email', 'email'],
 			['phone', 'safe'],
-			['verifyCode', 'captcha', 'skipOnEmpty' => !Captcha::checkRequirements(), 'message' => 'Код с картинки введен неверно!'],
+		   ['verifyCode', 'captcha', 'skipOnEmpty' => !Captcha::checkRequirements(), 'message' => 'Код с картинки введен неверно!'],
 			['text', 'trim'],
 		];
 }
